@@ -6,10 +6,10 @@ import {Link} from "react-router-dom";
 
 import Bell from "../../../assets/icons/Bell.svg";
 import ArrowDown from "../../../assets/icons/ArrowDown.svg";
-import PartyPopper from "../../../assets/icons/PartyPopper.svg";
-import VerificationIcon from "../../../assets/icons/VerificationIcon.svg";
 import RedEllipse from "../../../assets/icons/RedEllipse.svg";
 import AccordionWrapper from "../../components/Accordion";
+import ProfileCompletion from "../../components/ProfileCompletion";
+import Progress from "../../components/Progress";
 
 export * from "./types";
 
@@ -48,68 +48,8 @@ export const HomePage: FC<HomePageProps> = (props) => {
             </Styled.HeaderContainer>
             <Styled.Section>
                 <Styled.ProfileCompletionWrapper>
-                    <Styled.ProfileCompletionInfo>
-                        <Styled.ProfileCompletionInfoItem>
-                            <Styled.PageSubtitle>
-                                You successfully complete your profile at Tipaw
-                            </Styled.PageSubtitle>
-                            <Styled.Description>
-                                Now you can use Tipaw for 100% <img src={PartyPopper} width="22px"
-                                                                    alt="PartyPopper Icon"/>
-                            </Styled.Description>
-                        </Styled.ProfileCompletionInfoItem>
-                        <Styled.ProfileCompletionInfoItem>
-                            <Styled.ProfileCompletionStatus>
-                                <p style={{margin: "0"}}>Profile completed</p>
-                                <p style={{color: theme.color.green.default, fontSize: "14px", margin: "0"}}>100%</p>
-                            </Styled.ProfileCompletionStatus>
-                            <Styled.ProfileCompletionBar>
-                                <Styled.ProfileCompletionBarItem/>
-                                <Styled.ProfileCompletionBarItem/>
-                                <Styled.ProfileCompletionBarItem/>
-                                <Styled.ProfileCompletionBarItem/>
-                                <Styled.ProfileCompletionBarItem/>
-                            </Styled.ProfileCompletionBar>
-                        </Styled.ProfileCompletionInfoItem>
-                    </Styled.ProfileCompletionInfo>
-                    <Styled.ProgressContainer>
-                        <Styled.ProgressItem>
-                            <Styled.PageIcon src={VerificationIcon} alt="Verification Icon"/>
-                            <Styled.ProgressItemTitle>
-                                Verification
-                            </Styled.ProgressItemTitle>
-                            <Styled.ProgressItemSubtitle>
-                                You verified your account
-                            </Styled.ProgressItemSubtitle>
-                        </Styled.ProgressItem>
-                        <Styled.ProgressItem>
-                            <Styled.PageIcon src={VerificationIcon} alt="Verification Icon"/>
-                            <Styled.ProgressItemTitle>
-                                Profile picture
-                            </Styled.ProgressItemTitle>
-                            <Styled.ProgressItemSubtitle>
-                                You added your profile picture
-                            </Styled.ProgressItemSubtitle>
-                        </Styled.ProgressItem>
-                        <Styled.ProgressItem>
-                            <Styled.PageIcon src={VerificationIcon} alt="Verification Icon"/>
-                            <Styled.ProgressItemTitle>
-                                Parents
-                            </Styled.ProgressItemTitle>
-                            <Styled.ProgressItemSubtitle>
-                                You added the parents
-                            </Styled.ProgressItemSubtitle>
-                        </Styled.ProgressItem>
-                        <Styled.ProgressItem>
-                            <Styled.PageIcon src={VerificationIcon} alt="Verification Icon"/>
-                            <Styled.ProgressItemTitle>
-                                Litter
-                            </Styled.ProgressItemTitle>
-                            <Styled.ProgressItemSubtitle>
-                                Your created the litter
-                            </Styled.ProgressItemSubtitle>
-                        </Styled.ProgressItem>
-                    </Styled.ProgressContainer>
+                    <ProfileCompletion />
+                    <Progress />
                 </Styled.ProfileCompletionWrapper>
             </Styled.Section>
             <Styled.Section>
