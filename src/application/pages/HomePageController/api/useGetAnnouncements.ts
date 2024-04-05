@@ -5,7 +5,7 @@ export const useGetAnnouncements = () => {
   const announcements = useMemo(() => {
     return [
       {
-        id: "NOT-SO-UNIQUE-ID",
+        id: "1",
         title: "What is Tipaw ?",
         date: "04/04/2024",
         content:

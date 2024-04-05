@@ -4,7 +4,7 @@ export const theme = {
     alternate: "'Source Serif 4', serif",
   },
   color: {
-    tranparent: "transparent",
+    transparent: "transparent",
     light: {
       default: "white",
       tint: "#f8f8f8",
